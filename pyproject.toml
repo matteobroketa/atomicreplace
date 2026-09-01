@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools==82.0.1"]
+requires = ["setuptools==84.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -31,10 +31,10 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
-    "build==1.5.0",
-    "coverage==7.15.2",
-    "mypy==2.3.0",
-    "ruff==0.16.0",
+    "build==1.6.0",
+    "coverage==7.16.0",
+    "mypy==2.3.1",
+    "ruff==0.16.5",
 ]
 
 [project.urls]
@@ -62,7 +62,7 @@ select = ["E", "F", "I", "B", "SIM", "RUF"]
 ignore = ["SIM105", "SIM117"]
 
 [tool.mypy]
-# mypy==2.3.0 no longer accepts a Python 3.9 analysis target. Python 3.9
+# mypy==2.3.1 no longer accepts a Python 3.9 analysis target. Python 3.9
 # remains enforced by the hosted runtime matrix and repository syntax validator.
 python_version = "3.10"
 strict = true
